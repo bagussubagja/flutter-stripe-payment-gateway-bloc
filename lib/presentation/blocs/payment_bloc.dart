@@ -20,7 +20,7 @@ class PaymentBloc extends Bloc<PaymentEvent, PaymentState> {
       await makePaymentUseCase.execute(event.amount, event.currency);
       emit(PaymentSuccess());
     } catch (e) {
-      if (e.toString().contains("Payment canceled")) {
+      if (e.toString().contains("canceled")) {
         emit(PaymentCancelled());
       } else {
         emit(PaymentFailure(e.toString()));

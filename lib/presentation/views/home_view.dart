@@ -1,4 +1,3 @@
-// lib/presentation/views/home_view.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_stripe_payment_gateway_bloc/presentation/views/receipt_success_payment_view.dart';
